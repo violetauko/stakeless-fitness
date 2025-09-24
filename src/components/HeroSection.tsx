@@ -52,33 +52,33 @@ const HeroSection = () => {
       </div>
 
       <div className="relative z-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl  mx-auto px-4 sm:px-6 lg:px-8">
           <div className="-mt-12">
             <div className="bg-red-600 rounded-sm px-6 py-6 md:px-10 md:py-8 shadow-xl">
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-white text-center">
+              <div className="grid grid-cols-4 md:grid-cols-4 gap-2 md:gap6 text-white text-center">
                 <div className="flex flex-col items-center gap-3">
-                  <div className="w-14 h-14 rounded-full bg-white text-red-600 flex items-center justify-center">
-                    <Dumbbell className="w-7 h-7" />
+                  <div className="w-8 h-8 md:w-14 md:h-14 rounded-full bg-white text-red-600 flex items-center justify-center">
+                    <Dumbbell className="w-4 h-4 md:w-7 md:h-7" />
                   </div>
-                  <p className="text-xs uppercase tracking-wider font-semibold">Dedicated Services</p>
+                  <p className="text-[8px] md:text-xs uppercase tracking-wider font-semibold">Dedicated Services</p>
                 </div>
                 <div className="flex flex-col items-center gap-3">
-                  <div className="w-14 h-14 rounded-full bg-white text-red-600 flex items-center justify-center">
-                    <Users className="w-7 h-7" />
+                  <div className="w-8 h-8 md:w-14 md:h-14 rounded-full bg-white text-red-600 flex items-center justify-center">
+                    <Users className="w-4 h-4 md:w-7 md:h-7" />
                   </div>
-                  <p className="text-xs uppercase tracking-wider font-semibold">Qualified Instructor</p>
+                  <p className="text-[8px] md:text-xs uppercase tracking-wider font-semibold">Qualified Instructor</p>
                 </div>
                 <div className="flex flex-col items-center gap-3">
-                  <div className="w-14 h-14 rounded-full bg-white text-red-600 flex items-center justify-center">
-                    <ShieldCheck className="w-7 h-7" />
+                  <div className="w-8 h-8 md:w-14 md:h-14  rounded-full bg-white text-red-600 flex items-center justify-center">
+                    <ShieldCheck className="w-4 h-4 md:w-7 md:h-7" />
                   </div>
-                  <p className="text-xs uppercase tracking-wider font-semibold">Organic Proteins</p>
+                  <p className="text-[8px] md:text-xs uppercase tracking-wider font-semibold">Organic Proteins</p>
                 </div>
                 <div className="flex flex-col items-center gap-3">
-                  <div className="w-14 h-14 rounded-full bg-white text-red-600 flex items-center justify-center">
-                    <Medal className="w-7 h-7" />
+                  <div className="w-8 h-8 md:w-14 md:h-14  rounded-full bg-white text-red-600 flex items-center justify-center">
+                    <Medal className="w-4 h-4 md:w-7 md:h-7" />
                   </div>
-                  <p className="text-xs uppercase tracking-wider font-semibold">Personalized Plans</p>
+                  <p className="text-[8px] md:text-xs uppercase tracking-wider font-semibold">Personalized Plans</p>
                 </div>
               </div>
             </div>

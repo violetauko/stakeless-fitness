@@ -44,7 +44,7 @@ export default function AboutUs() {
 					<div className="bg-gray-50 border border-gray-200 p-6 sm:p-8 relative">
 						<div className="text-5xl text-red-600 font-bold leading-none select-none">“</div>
 						<p className="mt-2 text-lg sm:text-xl font-semibold text-red-600">
-							Push harder than yesterday if you want on the different tomorrow.
+							Push harder than yesterday if you want a different tomorrow.
 						</p>
 						<div className="mt-6 flex items-center gap-3">
 							<Image

@@ -24,7 +24,7 @@ const TrainerProfiles = () => {
   ];
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-gray-50" id='trainers'>
       <div className="max-w-6xl mx-auto px-4">
         {/* Header */}
         <div className="mb-12 text-center">
@@ -102,6 +102,7 @@ const TrainerProfiles = () => {
             {/* Social Icons */}
             
           </div>
+          
         </div>
       </div>
     </section>
