@@ -246,7 +246,7 @@ const ProgramsServices = () => {
 
                 {/* Benefits */}
                 <div className="mb-6">
-                  <h4 className="text-sm md:text-lg font-semibold text-white mb-4">What's Included</h4>
+                  <h4 className="text-sm md:text-lg font-semibold text-white mb-4">What&apos;s Included</h4>
                   <ul className="space-y-3">
                     {selectedProgram.detailedInfo.benefits.map((benefit, idx) => (
                       <li key={idx} className="flex items-start gap-3">

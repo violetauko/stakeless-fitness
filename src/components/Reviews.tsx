@@ -1,5 +1,6 @@
 import React from 'react';
 import { Star, User, Heart, Trophy, Zap, Target } from 'lucide-react';
+import Image from 'next/image';
 
 const ReviewsPage = () => {
   const reviews = [
@@ -161,7 +162,7 @@ const ReviewsPage = () => {
           {/* Center Image */}
           <div className="relative z-10">
             <div className="w-60 h-60 md:w-96 md:h-96 relative group">
-              <img
+              <Image
                 src="https://thumbs.dreamstime.com/b/congratulations-phrase-well-done-encouragement-motivation-message-successful-accomplishment-well-done-congratulations-phrase-118073231.jpg?w=768"
                 alt="Fitness Success"
                 className="w-full h-full object-cover rounded-full shadow-2xl group-hover:scale-105 transition-transform duration-700"

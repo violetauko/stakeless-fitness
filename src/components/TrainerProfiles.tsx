@@ -1,5 +1,5 @@
+import Image from 'next/image';
 import React from 'react';
-import { Facebook, Twitter, Instagram, Globe, Linkedin } from 'lucide-react';
 
 const TrainerProfiles = () => {
   const trainers = [
@@ -45,7 +45,7 @@ const TrainerProfiles = () => {
           {trainers.map((trainer) => (
             <div key={trainer.id} className="bg-white shadow-lg rounded-lg overflow-hidden">
               <div className="h-48 sm:h-56">
-                <img
+                <Image
                   src={trainer.image}
                   alt={trainer.name}
                   className="w-full h-full object-cover"
@@ -68,7 +68,7 @@ const TrainerProfiles = () => {
           {/* First trainer - Image left, content right */}
           <div className="grid grid-cols-2">
             <div className="h-64 lg:h-80">
-              <img
+              <Image
                 src={trainers[0].image}
                 alt={trainers[0].name}
                 className="w-full h-full object-cover"
@@ -95,7 +95,7 @@ const TrainerProfiles = () => {
               </p>
             </div>
             <div className="h-64 lg:h-80">
-              <img
+              <Image
                 src={trainers[1].image}
                 alt={trainers[1].name}
                 className="w-full h-full object-cover"
@@ -106,7 +106,7 @@ const TrainerProfiles = () => {
           {/* Third trainer - Image left, content right */}
           <div className="grid grid-cols-2">
             <div className="h-64 lg:h-80">
-              <img
+              <Image
                 src={trainers[2].image}
                 alt={trainers[2].name}
                 className="w-full h-full object-cover"

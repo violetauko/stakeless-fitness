@@ -25,12 +25,12 @@ const HeroSection = () => {
             </span>
             <h1 className="mt-5 text-white text-2xl md:text-6xl font-extrabold leading-[0.9] tracking-tight [font-family:var(--font-display),_sans-serif]" 
             >
-              GET FIT DON'T
+              GET FIT DON&apos;T
               <br />
               QUIT
             </h1>
             <p className="mt-4 text-gray-200 max-w-xl text-xs md:text-lg">
-              Today I will do what others won’t, so tomorrow I can accomplish what others can’t.
+              Today I will do what others won&apos;t, so tomorrow I can accomplish what others can’t.
               We are what we repeatedly do. Excellence, then, is not an act but a habit.
             </p>
             <div className="mt-8 mb-4 flex items-center gap-4">
