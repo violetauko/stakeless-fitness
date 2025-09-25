@@ -33,7 +33,7 @@ const HeroSection = () => {
               Today I will do what others won’t, so tomorrow I can accomplish what others can’t.
               We are what we repeatedly do. Excellence, then, is not an act but a habit.
             </p>
-            <div className="mt-8 flex items-center gap-4">
+            <div className="mt-8 mb-4 flex items-center gap-4">
               <a
                 href="https://wa.me/254725023276?text=Hi%20Trainer!%20I%E2%80%99d%20like%20to%20book%20a%20training%20session."
                 target="_blank"
