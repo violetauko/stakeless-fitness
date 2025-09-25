@@ -48,6 +48,8 @@ const TrainerProfiles = () => {
                 <Image
                   src={trainer.image}
                   alt={trainer.name}
+                  width={400}
+                  height={300}
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -71,6 +73,8 @@ const TrainerProfiles = () => {
               <Image
                 src={trainers[0].image}
                 alt={trainers[0].name}
+                width={400}
+                height={300}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -98,6 +102,8 @@ const TrainerProfiles = () => {
               <Image
                 src={trainers[1].image}
                 alt={trainers[1].name}
+                width={400}
+                height={300}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -109,6 +115,8 @@ const TrainerProfiles = () => {
               <Image
                 src={trainers[2].image}
                 alt={trainers[2].name}
+                width={400}
+                height={300}
                 className="w-full h-full object-cover"
               />
             </div>

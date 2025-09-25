@@ -165,6 +165,8 @@ const ReviewsPage = () => {
               <Image
                 src="https://thumbs.dreamstime.com/b/congratulations-phrase-well-done-encouragement-motivation-message-successful-accomplishment-well-done-congratulations-phrase-118073231.jpg?w=768"
                 alt="Fitness Success"
+                width={400}
+                height={400}
                 className="w-full h-full object-cover rounded-full shadow-2xl group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-red-500/20 to-transparent rounded-full"></div>
