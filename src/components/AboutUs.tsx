@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function AboutUs() {
 	return (
 		<div className="bg-white">
-			<section id="about" className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-20 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center scroll-mt-24">
+			<section id="about" className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 md:pt-28 pb-20 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center scroll-mt-24">
 				{/* Left: stacked images */}
 				<div className="relative">
 					<div className="relative aspect-[4/3] w-full overflow-hidden z-0">
