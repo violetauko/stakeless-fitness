@@ -30,10 +30,10 @@ export default function AboutUs() {
 				{/* Right: content */}
 				<div className="space-y-6">
 					<p className="uppercase tracking-widest text-sm text-red-600 font-semibold">About us</p>
-					<h1 className="font-[var(--font-display)] text-4xl sm:text-5xl leading-tight text-gray-900">
+					<h1 className="font-[var(--font-display)] text-2xl md:text-4xl leading-tight text-gray-900">
 						Make yourself stronger than your best excuses
 					</h1>
-					<p className="text-gray-600">
+					<p className="text-gray-600 text-sm md:text-lg leading-relaxed">
 						At Stakeless Fitness, we help everyday people build sustainable strength and
 						confidence. Our coaches combine proven training methods with personalized
 						guidance so you can progress at your pace. From technique to nutrition
@@ -41,9 +41,9 @@ export default function AboutUs() {
 					</p>
 
 					{/* Quote card */}
-					<div className="bg-gray-50 border border-gray-200 p-6 sm:p-8 relative">
-						<div className="text-5xl text-red-600 font-bold leading-none select-none">“</div>
-						<p className="mt-2 text-lg sm:text-xl font-semibold text-red-600">
+					<div className="bg-gray-50 border border-gray-200 p-4 md:p-6 sm:p-8 relative">
+						<div className="md:text-5xl text-3xl text-red-600 font-bold leading-none select-none">“</div>
+						<p className="mt-2 text-sm md:text-lg sm:text-xl font-semibold text-red-600">
 							Push harder than yesterday if you want a different tomorrow.
 						</p>
 						<div className="mt-6 flex items-center gap-3">
