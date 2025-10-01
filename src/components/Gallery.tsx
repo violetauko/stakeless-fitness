@@ -5,34 +5,32 @@ import Image from 'next/image';
 interface GalleryItem {
   id: number;
   image: string;
-  title: string;
 }
 
 const Gallery: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<GalleryItem | null>(null);
 
   const galleryItems: GalleryItem[] = [
-    { id: 1, image: '/images/img1.jpeg', title: 'Cardio Zone' },
-    { id: 2, image: '/images/img2.jpeg', title: 'Personal Training' },
-    { id: 3, image: '/images/img3.jpeg', title: 'Main Gym Floor' },
-    { id: 4, image: '/images/img4.jpeg', title: 'Strength Training' },
-    { id: 5, image: '/images/img5.jpeg', title: 'Group Classes' },
-    { id: 6, image: '/images/img6.jpeg', title: 'Yoga Studio' },
-    { id: 7, image: '/images/img7.jpeg', title: 'CrossFit Area' },
-    { id: 8, image: '/images/img8.jpeg', title: 'Locker Rooms' },
-    { id: 9, image: '/images/img9.jpeg', title: 'Spin Studio' },
-    { id: 10, image: '/images/img10.jpeg', title: 'Boxing Ring' },
-    { id: 11, image: '/images/img11.jpeg', title: 'Pilates Studio' },
-    { id: 12, image: '/images/img12.jpeg', title: 'Recovery Area' },
-    { id: 13, image: '/images/img13.jpeg', title: 'Swimming Pool' },
-    { id: 14, image: '/images/img14.jpeg', title: 'Sauna' },
-    { id: 15, image: '/images/img15.jpeg', title: 'Juice Bar' },
-    { id: 16, image: '/images/img16.jpeg', title: 'Reception' },
-    { id: 17, image: '/images/img17.jpeg', title: 'Outdoor Training' },
+    { id: 1, image: '/images/img1.jpeg'},
+    { id: 2, image: '/images/img2.jpeg' },
+    { id: 3, image: '/images/img3.jpeg'},
+    { id: 4, image: '/images/img4.jpeg'},
+    { id: 5, image: '/images/img5.jpeg'},
+    { id: 6, image: '/images/img6.jpeg' },
+    { id: 7, image: '/images/img7.jpeg'},
+    { id: 8, image: '/images/img8.jpeg' },
+    { id: 9, image: '/images/img9.jpeg' },
+    { id: 10, image: '/images/img10.jpeg'},
+    { id: 11, image: '/images/img11.jpeg' },
+    { id: 12, image: '/images/img12.jpeg'},
+    { id: 13, image: '/images/img13.jpeg'},
+    { id: 14, image: '/images/img14.jpeg'},
+    { id: 15, image: '/images/img15.jpeg' },
+    { id: 16, image: '/images/img16.jpeg'},
   ];
 
   return (
-    <div id='gallery' className="min-h-screen bg-gray-50 py-16 px-4">
+    <div id='gallery' className="min-h-screen bg-white py-20 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
          <div className="mb-8 sm:mb-10 md:mb-12 text-center">
@@ -46,26 +44,21 @@ const Gallery: React.FC = () => {
           </p>
         </div>
 
-        {/* Gallery Grid - Exact layout from image */}
+        {/* Gallery Grid - Museum-style masonry layout */}
         <div className="gallery-container">
-          {galleryItems.slice(0, 17).map((item, index) => (
+          {galleryItems.map((item, index) => (
             <div
               key={item.id}
-              className={`gallery-item item-${index + 1} group relative overflow-hidden cursor-pointer bg-white`}
+              className={`gallery-item item-${index + 1} group relative overflow-hidden cursor-pointer bg-gray-100 shadow-sm hover:shadow-xl transition-shadow duration-300`}
               onClick={() => setSelectedImage(item)}
             >
               <Image
                 src={item.image}
-                alt={item.title}
-                width={400}
-                height={300}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                alt={`Gallery Image ${item.id}`}
+                width={800}
+                height={600}
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <p className="text-white text-sm font-medium">{item.title}</p>
-                </div>
-              </div>
             </div>
           ))}
         </div>
@@ -85,14 +78,11 @@ const Gallery: React.FC = () => {
             <div className="max-w-6xl max-h-[90vh] relative" onClick={(e) => e.stopPropagation()}>
               <Image
                 src={selectedImage.image}
-                alt={selectedImage.title}
+                alt="Selected Gallery Image"
                 width={1200}
                 height={800}
                 className="w-full h-full object-contain"
               />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-8">
-                <h3 className="text-white text-2xl font-semibold">{selectedImage.title}</h3>
-              </div>
             </div>
           </div>
         )}
@@ -102,14 +92,14 @@ const Gallery: React.FC = () => {
         .gallery-container {
           display: grid;
           grid-template-columns: repeat(4, 1fr);
-          grid-template-rows: repeat(3, 250px);
-          gap: 16px;
+          grid-template-rows: repeat(3, 280px);
+          gap: 12px;
         }
 
-        /* Row 1: small, tall, wide */
+        /* Row 1: tall, tall+wide, extra wide */
         .item-1 {
           grid-column: 1 / 2;
-          grid-row: 1 / 2;
+          grid-row: 1 / 3;
         }
 
         .item-2 {
@@ -122,36 +112,36 @@ const Gallery: React.FC = () => {
           grid-row: 1 / 2;
         }
 
-        /* Row 2: small, medium, small */
+        /* Row 2: (continues tall images), medium, medium */
         .item-4 {
-          grid-column: 1 / 2;
-          grid-row: 2 / 3;
-        }
-
-        .item-5 {
           grid-column: 3 / 4;
           grid-row: 2 / 3;
         }
 
-        .item-6 {
+        .item-5 {
           grid-column: 4 / 5;
           grid-row: 2 / 3;
         }
 
-        /* Row 3: small, small, wide */
-        .item-7 {
+        /* Row 3: medium, medium, wide */
+        .item-6 {
           grid-column: 1 / 2;
           grid-row: 3 / 4;
         }
 
-        .item-8 {
+        .item-7 {
           grid-column: 2 / 3;
           grid-row: 3 / 4;
         }
 
-        .item-9 {
+        .item-8 {
           grid-column: 3 / 5;
           grid-row: 3 / 4;
+        }
+
+        .item-9 {
+          grid-column: 1 / 2;
+          grid-row: 4 / 5;
         }
 
         @media (max-width: 1024px) {
