@@ -9,7 +9,7 @@ interface GalleryItem {
 
 const Gallery: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<GalleryItem | null>(null);
-
+//images
   const galleryItems: GalleryItem[] = [
     { id: 1, image: '/images/img1.jpeg'},
     { id: 2, image: '/images/img2.jpeg' },
