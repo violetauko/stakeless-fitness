@@ -45,6 +45,7 @@ const Navigation = () => {
             <a href="#programs" className={`${isScrolled ? 'text-gray-700' : 'text-white'} hover:text-red-500 transition-colors`}>Programs</a>
             <a href="#trainers" className={`${isScrolled ? 'text-gray-700' : 'text-white'} hover:text-red-500 transition-colors`}>Trainers</a>
             <a href="#workouts" className={`${isScrolled ? 'text-gray-700' : 'text-white'} hover:text-red-500 transition-colors`}>Workouts</a>
+            <a href="#gallery" className={`${isScrolled ? 'text-gray-700' : 'text-white'} hover:text-red-500 transition-colors`}>Gallery</a>
             <a href="#reviews" className={`${isScrolled ? 'text-gray-700' : 'text-white'} hover:text-red-500 transition-colors`}>Reviews</a>
            
           </div>
