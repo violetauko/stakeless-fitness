@@ -5,44 +5,40 @@ import { Dumbbell, Medal, ShieldCheck, Users } from 'lucide-react';
 const HeroSection = () => {
   return (
     <section id="home" className="relative scroll-mt-24">
-      <div className="relative min-h-[80vh] flex items-center pt-24">
+      <div className="relative min-h-[50vh] md:min-h-[80vh] flex items-center pt-24">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=2070&auto=format&fit=crop"
+            src="/images/img2.jpeg"
             alt="Athlete training at the gym"
             fill
             priority
             className="object-cover"
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-black/70" />
+          <div className="absolute inset-0 bg-black/50" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl">
-            <span className="inline-block bg-red-600 text-white text-xs tracking-widest font-semibold px-4 py-1 rounded-sm">
+            <span className="inline-block bg-red-600 text-white text-[10px] md:text-xs tracking-widest font-semibold px-4 py-1 rounded-sm">
               SHAPE OF YOU
             </span>
-            <h1 className="mt-5 text-white font-extrabold leading-[0.9] tracking-tight [font-family:var(--font-display),_sans-serif]" style={{
-              fontSize: 'clamp(2.5rem, 6vw, 5rem)'
-            }}>
-              GET FIT DON'T
+            <h1 className="mt-5 text-white text-2xl md:text-6xl font-extrabold leading-[0.9] tracking-tight [font-family:var(--font-display),_sans-serif]" 
+            >
+              GET FIT DON&apos;T
               <br />
               QUIT
             </h1>
-            <p className="mt-4 text-gray-200 max-w-xl">
-              Today I will do what others won’t, so tomorrow I can accomplish what others can’t.
+            <p className="mt-4 text-gray-200 max-w-xl text-xs md:text-lg">
+              Today I will do what others won&apos;t, so tomorrow I can accomplish what others can’t.
               We are what we repeatedly do. Excellence, then, is not an act but a habit.
             </p>
-            <div className="mt-8 flex items-center gap-4">
-              {/* <button className="bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-sm">
-                Join Now
-              </button> */}
+            <div className="mt-8 mb-4 flex items-center gap-4">
               <a
                 href="https://wa.me/254725023276?text=Hi%20Trainer!%20I%E2%80%99d%20like%20to%20book%20a%20training%20session."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border border-white/70 text-white hover:bg-white hover:text-black font-semibold px-6 py-3 rounded-sm"
+                className="border border-white/70 text-white hover:bg-white hover:text-black font-semibold px-3 py-2 md:px-6 md:py-3 rounded-sm text-xs md:text-lg transition-colors duration-300"
               >
                 Book a Session
               </a>

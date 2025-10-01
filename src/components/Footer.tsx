@@ -1,6 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
-import { Instagram, Facebook, Phone, Mail, MapPin } from 'lucide-react';
 
 const Footer = () => {
   return (

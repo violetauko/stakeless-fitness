@@ -136,10 +136,10 @@ const ProgramsServices = () => {
         <div className="mb-12 text-center">
           <div className="flex items-center justify-center mb-4">
             <div className="flex-1 h-0.5 bg-red-500 max-w-32"></div>
-            <h2 className="text-2xl font-bold text-white mx-4">OUR PROGRAMS & SERVICES</h2>
+            <h2 className="text-lg md:text-2xl font-bold text-white mx-4">OUR PROGRAMS & SERVICES</h2>
             <div className="flex-1 h-0.5 bg-red-500 max-w-32"></div>
           </div>
-          <p className="text-white max-w-2xl mx-auto">
+          <p className="text-white max-w-2xl mx-auto text-sm md:text-lg">
           Choose from our comprehensive range of fitness programs designed to meet your unique goals and lifestyle.
           </p>
         </div>
@@ -158,15 +158,15 @@ const ProgramsServices = () => {
               >
                 <div className="p-6">
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="grid h-12 w-12 place-items-center rounded-xl bg-gradient-to-br from-orange-600/20 to-red-600/20 text-orange-400 border border-orange-600/30">
+                    <div className="grid h-8 w-8 md:h-12 md:w-12 place-items-center rounded-xl bg-gradient-to-br from-orange-600/20 to-red-600/20 text-orange-400 border border-orange-600/30">
                       {program.icon}
                     </div>
-                    <h3 className="text-lg font-bold text-white">{program.title}</h3>
+                    <h3 className="text-sm md:text:lg font-bold text-white">{program.title}</h3>
                   </div>
-                  <p className="text-sm text-zinc-400 mb-4 leading-relaxed">{program.description}</p>
+                  <p className="text-xs md:text-sm text-zinc-400 mb-4 leading-relaxed">{program.description}</p>
                   <ul className="space-y-2 mb-6">
                     {program.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-center text-zinc-300 text-sm">
+                      <li key={idx} className="flex items-center text-zinc-300 text-xs md:text-sm">
                         <ChevronRight className="w-4 h-4 text-red-500 mr-2 flex-shrink-0" />
                         {feature}
                       </li>
@@ -175,7 +175,7 @@ const ProgramsServices = () => {
                   <div className="flex justify-center">
                   <button 
                     onClick={() => setSelectedProgram(program)}
-                    className="text-red-500 font-semibold hover:text-red-400 transition-colors text-sm tracking-wide cursor-pointer"
+                    className="text-red-500 font-semibold hover:text-red-400 transition-colors text-xs md:text-sm tracking-wide cursor-pointer"
                   >
                     Learn More
                   </button>
@@ -198,12 +198,12 @@ const ProgramsServices = () => {
                 {/* Header */}
                 <div className="flex items-center justify-between mb-6">
                   <div className="flex items-center gap-4">
-                    <div className="grid h-14 w-14 place-items-center rounded-xl bg-gradient-to-br from-orange-600/20 to-red-600/20 text-red-400 border border-red-600/30">
+                    <div className="grid h-14 w-8 md:h-8 md:w-14 place-items-center rounded-xl bg-gradient-to-br from-orange-600/20 to-red-600/20 text-red-400 border border-red-600/30">
                       {selectedProgram.icon}
                     </div>
                     <div>
-                      <h3 className="text-2xl font-bold text-white">{selectedProgram.title}</h3>
-                      <p className="text-red-400 font-semibold">{selectedProgram.detailedInfo.pricing}</p>
+                      <h3 className="text-lg md:text-2xl font-bold text-white">{selectedProgram.title}</h3>
+                      <p className="text-red-400 font-semibold text-sm md:text-lg">{selectedProgram.detailedInfo.pricing}</p>
                     </div>
                   </div>
                   <button
@@ -216,7 +216,7 @@ const ProgramsServices = () => {
 
                 {/* Overview */}
                 <div className="mb-6">
-                  <p className="text-zinc-300 leading-relaxed">{selectedProgram.detailedInfo.overview}</p>
+                  <p className="text-zinc-300 leading-relaxed text-sm md:text-lg">{selectedProgram.detailedInfo.overview}</p>
                 </div>
 
                 {/* Quick Info */}
@@ -226,44 +226,44 @@ const ProgramsServices = () => {
                       <Clock className="w-4 h-4 text-red-400" />
                       <span className="text-zinc-400 text-sm font-medium">Duration</span>
                     </div>
-                    <p className="text-white text-sm">{selectedProgram.detailedInfo.duration}</p>
+                    <p className="text-white text-xs md:text-sm">{selectedProgram.detailedInfo.duration}</p>
                   </div>
                   <div className="bg-zinc-800/50 rounded-lg p-4 border border-zinc-700/50">
                     <div className="flex items-center gap-2 mb-2">
                       <Users className="w-4 h-4 text-red-400" />
                       <span className="text-zinc-400 text-sm font-medium">Difficulty</span>
                     </div>
-                    <p className="text-white text-sm">{selectedProgram.detailedInfo.difficulty}</p>
+                    <p className="text-white text-xs md:text-sm">{selectedProgram.detailedInfo.difficulty}</p>
                   </div>
                   <div className="bg-zinc-800/50 rounded-lg p-4 border border-zinc-700/50">
                     <div className="flex items-center gap-2 mb-2">
                       <Award className="w-4 h-4 text-red-400" />
-                      <span className="text-zinc-400 text-sm font-medium">Equipment</span>
+                      <span className="text-zinc-400 text-xs md:text-sm font-medium">Equipment</span>
                     </div>
-                    <p className="text-white text-sm">{selectedProgram.detailedInfo.equipment}</p>
+                    <p className="text-white text-xs md:text-sm">{selectedProgram.detailedInfo.equipment}</p>
                   </div>
                 </div>
 
                 {/* Benefits */}
                 <div className="mb-6">
-                  <h4 className="text-lg font-semibold text-white mb-4">What's Included</h4>
+                  <h4 className="text-sm md:text-lg font-semibold text-white mb-4">What&apos;s Included</h4>
                   <ul className="space-y-3">
                     {selectedProgram.detailedInfo.benefits.map((benefit, idx) => (
                       <li key={idx} className="flex items-start gap-3">
-                        <ChevronRight className="w-4 h-4 text-red-500 mt-0.5 flex-shrink-0" />
-                        <span className="text-zinc-300 text-sm">{benefit}</span>
+                        <ChevronRight className="w-2 h-2 md:w-4 md:h-4 text-red-500 mt-0.5 flex-shrink-0" />
+                        <span className="text-zinc-300 text-xs md:text-sm">{benefit}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
 
                 {/* Action Button */}
-                <div className="flex justify-center pt-4 border-t border-zinc-700/50">
+                <div className="flex justify-center pt-2 md:pt-4 border-t border-zinc-700/50">
                   <a 
                     href="https://wa.me/254725023276"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-8 py-3 border border-zinc-600 hover:border-red-500 hover:bg-orange-500/10 text-zinc-300 hover:text-red-400 rounded-lg transition-all duration-200 font-medium"
+                    className="px-4 py-2 md:px-8 md:py-3 text-xs md:text-sm border border-zinc-600 hover:border-red-500 hover:bg-orange-500/10 text-zinc-300 hover:text-red-400 rounded-lg transition-all duration-200 font-medium"
                   >
                     Contact Us on WhatsApp
                   </a>

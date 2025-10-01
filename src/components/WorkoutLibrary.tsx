@@ -112,23 +112,23 @@ const WorkoutLibrary = () => {
   const [openItem, setOpenItem] = useState<FeaturedItem | null>(null);
 
   return (
-    <section id="workouts" className="py-20 bg-gray-50 scroll-mt-24">
+    <section id="workouts" className="py-10 bg-gray-50 scroll-mt-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12 text-center">
           <div className="flex items-center justify-center mb-4">
             <div className="flex-1 h-0.5 bg-red-400 max-w-32"></div>
-            <h2 className="text-2xl font-bold text-gray-900 mx-4">WORKOUT LIBRARY</h2>
+            <h2 className="md:text-2xl text-xl font-bold text-gray-900 mx-4">WORKOUT LIBRARY</h2>
             <div className="flex-1 h-0.5 bg-red-400 max-w-32"></div>
           </div>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-          Access hundreds of workouts across different categories, from beginner to advanced levels.
+          <p className="text-gray-600 max-w-2xl mx-auto text-sm md:text-lg">
+            Access hundreds of workouts across different categories, from beginner to advanced levels.
           </p>
         </div>
 
         {/* Featured six-panel grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-0">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-6 xl:grid-cols-6 gap-0">
           {featured.map((item, index) => (
-            <div key={index} className="group relative h-[380px] sm:h-[420px] lg:h-[480px] overflow-hidden border-b border-white/10 xl:border-b-0 xl:border-r">
+            <div key={index} className="group relative md:h-[380px] h-[280px] sm:h-[420px] lg:h-[480px] overflow-hidden border-b border-white/10 xl:border-b-0 xl:border-r">
               <Image
                 src={item.image}
                 alt={item.name}
@@ -141,13 +141,16 @@ const WorkoutLibrary = () => {
               <div className="absolute inset-0 bg-black/15" />
 
               <div className="relative z-10 h-full w-full flex flex-col items-center justify-center text-center px-6">
-                <h3 className="text-white text-2xl lg:text-xl font-extrabold tracking-wide mb-4 drop-shadow">
+                <h3 className="text-white text-lg md:text-2xl lg:text-xl font-extrabold tracking-wide mb-4 drop-shadow">
                   {item.name.toUpperCase()}
                 </h3>
-                <p className="text-white/90 max-w-xs mb-6">
+                <p className="text-white/90 max-w-xs mb-6 text-sm md:text-lg">
                   {item.name} collection • {item.count} workouts curated for all levels.
                 </p>
-                <button onClick={() => setOpenItem(item)} className="inline-flex items-center gap-2 rounded-full border border-white/90 px-5 py-2 text-white font-semibold tracking-wide backdrop-blur-sm transition-colors duration-300 group-hover:bg-white group-hover:text-gray-900">
+                <button
+                  onClick={() => setOpenItem(item)}
+                  className="inline-flex items-center gap-1 sm:gap-2 rounded-full border border-white/90 px-3 py-1.5 sm:px-5 sm:py-2 text-xs sm:text-sm text-white font-semibold tracking-wide backdrop-blur-sm transition-colors duration-300 group-hover:bg-white group-hover:text-gray-900"
+                >
                   Read More
                 </button>
               </div>
@@ -174,7 +177,7 @@ const WorkoutLibrary = () => {
                 <p className="text-sm text-gray-500 mb-6">Includes {openItem.count} workouts with progressions, scaling options, and suggested weekly structure.</p>
                 <div className="flex items-center justify-end gap-3">
                   <button onClick={() => setOpenItem(null)} className="px-4 py-2 rounded-md border text-gray-700 hover:bg-gray-50">Close</button>
-                  
+
                 </div>
               </div>
             </div>
