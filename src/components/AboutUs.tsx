@@ -9,7 +9,7 @@ export default function AboutUs() {
 				<div className="relative">
 					<div className="relative aspect-[4/3] w-full overflow-hidden z-0">
 						<Image
-							src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1600&auto=format&fit=crop"
+							src="/images/img1.jpeg"
 							alt="People training in a gym"
 							fill
 							className="object-cover"
@@ -18,7 +18,7 @@ export default function AboutUs() {
 					</div>
 					<div className="absolute -bottom-10 -right-6 w-2/5 min-w-48 aspect-[4/3] overflow-hidden z-10">
 						<Image
-							src="https://images.unsplash.com/photo-1546749876-2088f8b19e09?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Z3ltJTIwZ2lybHxlbnwwfHwwfHx8MA%3D%3D"
+							src="/images/img5.jpeg"
 							alt="Boxer preparing with gloves"
 							fill
 							className="object-cover"

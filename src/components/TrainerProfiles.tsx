@@ -6,7 +6,7 @@ const TrainerProfiles = () => {
     {
       id: 1,
       name: "Shitanda",
-      image: "https://images.unsplash.com/photo-1603503363848-6952525df449?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmxhY2slMjBwZXJzb25hbCUyMHRyYWluZXJ8ZW58MHx8MHx8fDA%3D",
+      image: "/images/img1.jpeg",
       bio: "Certified personal trainer with 8+ years of experience specializing in strength training and weight management. Passionate about helping clients achieve sustainable fitness goals."
     },
     {

@@ -8,14 +8,14 @@ const HeroSection = () => {
       <div className="relative min-h-[50vh] md:min-h-[80vh] flex items-center pt-24">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=2070&auto=format&fit=crop"
+            src="/images/img2.jpeg"
             alt="Athlete training at the gym"
             fill
             priority
             className="object-cover"
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-black/70" />
+          <div className="absolute inset-0 bg-black/50" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
