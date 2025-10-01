@@ -9,18 +9,18 @@ const TrainerProfiles = () => {
       image: "/images/img1.jpeg",
       bio: "Certified personal trainer with 8+ years of experience specializing in strength training and weight management. Passionate about helping clients achieve sustainable fitness goals."
     },
-    {
-      id: 2,
-      name: "Jane Doe", 
-      image: "https://media.istockphoto.com/id/1144036339/photo/trainer-and-female-client-talking-in-gym.webp?a=1&b=1&s=612x612&w=0&k=20&c=T_lOjdL4wjCeIV0clFx3Mqd1z-lFiuwKSjZ_wp4bkko=",
-      bio: "Former competitive bodybuilder turned fitness coach. Expert in muscle building, nutrition planning, and sports performance enhancement for athletes of all levels."
-    },
-    {
-      id: 3,
-      name: "Mike Rodriguez",
-      image: "https://media.istockphoto.com/id/475430856/photo/personal-trainer-training-man-with-kettle-bell.webp?a=1&b=1&s=612x612&w=0&k=20&c=DwzAeQ4MYStqjlAazgqFtUTwvNpHdgsi-maZxHNg3xQ=",
-      bio: "Certified yoga instructor and flexibility specialist. Focuses on mindful movement, injury prevention, and holistic wellness approaches to fitness and health."
-    }
+    // {
+    //   id: 2,
+    //   name: "Jane Doe", 
+    //   image: "https://media.istockphoto.com/id/1144036339/photo/trainer-and-female-client-talking-in-gym.webp?a=1&b=1&s=612x612&w=0&k=20&c=T_lOjdL4wjCeIV0clFx3Mqd1z-lFiuwKSjZ_wp4bkko=",
+    //   bio: "Former competitive bodybuilder turned fitness coach. Expert in muscle building, nutrition planning, and sports performance enhancement for athletes of all levels."
+    // },
+    // {
+    //   id: 3,
+    //   name: "Mike Rodriguez",
+    //   image: "https://media.istockphoto.com/id/475430856/photo/personal-trainer-training-man-with-kettle-bell.webp?a=1&b=1&s=612x612&w=0&k=20&c=DwzAeQ4MYStqjlAazgqFtUTwvNpHdgsi-maZxHNg3xQ=",
+    //   bio: "Certified yoga instructor and flexibility specialist. Focuses on mindful movement, injury prevention, and holistic wellness approaches to fitness and health."
+    // }
   ];
 
   return (
@@ -89,7 +89,7 @@ const TrainerProfiles = () => {
           </div>
 
           {/* Second trainer - Content left, image right */}
-          <div className="grid grid-cols-2">
+          {/* <div className="grid grid-cols-2">
             <div className="p-6 lg:p-8 flex flex-col justify-center">
               <h3 className="text-xl lg:text-2xl font-semibold text-gray-900 mb-4">
                 {trainers[1].name}
@@ -107,10 +107,10 @@ const TrainerProfiles = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-          </div>
+          </div> */}
 
           {/* Third trainer - Image left, content right */}
-          <div className="grid grid-cols-2">
+          {/* <div className="grid grid-cols-2">
             <div className="h-64 lg:h-80">
               <Image
                 src={trainers[2].image}
@@ -128,7 +128,7 @@ const TrainerProfiles = () => {
                 {trainers[2].bio}
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

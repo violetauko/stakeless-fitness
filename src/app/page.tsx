@@ -9,6 +9,7 @@ import StatsSection from '@/components/StatsSection';
 import Footer from '@/components/Footer';
 import AboutUs from '@/components/AboutUs';
 import Reviews from '@/components/Reviews';
+import Gallery from '@/components/Gallery';
 
 const StacklessFitness = () => {
   return (
@@ -20,6 +21,7 @@ const StacklessFitness = () => {
       <ProgramsServices />
       <TrainerProfiles />
       <StatsSection />
+      <Gallery/>
       <Reviews />
       <Footer />
     </div>
